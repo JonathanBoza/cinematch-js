@@ -9,7 +9,7 @@ O CineMatch JS é um protótipo interativo de recomendação de streaming execut
 - percentual e classificação de compatibilidade;
 - gêneros em comum e ainda não explorados;
 - recomendação principal e personalizada;
-- pesquisa de conteúdo pelo título;
+- pesquisa de conteúdo pelo título ou gênero;
 - menu interativo que permanece aberto até a opção de saída.
 
 ## Como executar

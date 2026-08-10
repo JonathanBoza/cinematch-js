@@ -9,13 +9,12 @@ Este quadro registra o estado final do desenvolvimento. Ao usar GitHub Projects,
 
 ## A Fazer
 
-- Criar o repositório público e publicar as branches.
 - Gravar e publicar o vídeo de demonstração.
 - Preencher os links da entrega no README e enviar no AVA.
 
 ## Em Andamento
 
-- Revisar autoria e personalizar os títulos do catálogo.
+- Realizar a revisão final da entrega.
 
 ## Concluído
 
@@ -30,3 +29,6 @@ Este quadro registra o estado final do desenvolvimento. Ao usar GitHub Projects,
 - Criar menu com `do-while` e `switch`.
 - Documentar execução, conceitos e arquitetura cliente-servidor.
 - Testar o fluxo completo no terminal.
+- Criar o repositório público e publicar as branches obrigatórias.
+- Registrar a autoria de Jonathan Euzébio Boza.
+- Adicionar os links públicos do repositório e do Kanban ao README.

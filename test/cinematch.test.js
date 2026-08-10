@@ -7,6 +7,7 @@ const {
   calcularCompatibilidades,
   classificarCompatibilidade,
   encontrarMelhorConteudo,
+  buscarConteudo,
   criarContadorDeRecomendacoes,
 } = require('../cinematch');
 
@@ -50,4 +51,16 @@ test('closure mantém o total entre chamadas', () => {
   const contar = criarContadorDeRecomendacoes();
   assert.equal(contar(), 1);
   assert.equal(contar(), 2);
+});
+
+test('busca conteúdo por parte do título ou por gênero', () => {
+  const itens = [
+    new Conteudo(1, 'Risadas de Sábado', 'Filme', ['Comédia', 'Romance'], 98),
+    new Conteudo(2, 'Sombras do Porão', 'Filme', ['Terror', 'Suspense'], 110),
+  ];
+
+  assert.equal(buscarConteudo(itens, 'risadas').titulo, 'Risadas de Sábado');
+  assert.equal(buscarConteudo(itens, 'comedia').titulo, 'Risadas de Sábado');
+  assert.equal(buscarConteudo(itens, 'terror').titulo, 'Sombras do Porão');
+  assert.equal(buscarConteudo(itens, 'inexistente'), undefined);
 });

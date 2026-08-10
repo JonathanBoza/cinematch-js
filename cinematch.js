@@ -125,6 +125,17 @@ function encontrarMelhorConteudo(resultados) {
   );
 }
 
+function buscarConteudo(itens, termo) {
+  const termoNormalizado = normalizar(termo);
+  if (!termoNormalizado) return undefined;
+
+  return itens.find(
+    (item) =>
+      normalizar(item.titulo).includes(termoNormalizado) ||
+      item.generos.some((genero) => normalizar(genero).includes(termoNormalizado))
+  );
+}
+
 function exibirPerfil(usuario) {
   console.log(`\nNome: ${usuario.nome}`);
   console.log(`Idade: ${usuario.idade}`);
@@ -206,7 +217,7 @@ function exibirMenu(usuario, itens) {
     console.log('2 - Ver catálogo completo');
     console.log('3 - Calcular compatibilidade com todos os conteúdos');
     console.log('4 - Ver o conteúdo mais recomendado');
-    console.log('5 - Buscar conteúdo pelo título');
+    console.log('5 - Buscar conteúdo por título ou gênero');
     console.log('6 - Sair');
     opcao = prompt('Escolha uma opção: ').trim();
 
@@ -228,10 +239,8 @@ function exibirMenu(usuario, itens) {
         );
         break;
       case '5': {
-        const titulo = prompt('Digite o título (ou parte dele): ').trim();
-        const encontrado = itens.find((item) =>
-          normalizar(item.titulo).includes(normalizar(titulo))
-        );
+        const termo = prompt('Digite o título ou gênero: ').trim();
+        const encontrado = buscarConteudo(itens, termo);
         console.log(encontrado ? encontrado.exibirResumo() : 'Conteúdo não encontrado.');
         break;
       }
@@ -267,6 +276,7 @@ module.exports = {
   calcularCompatibilidades,
   classificarCompatibilidade,
   encontrarMelhorConteudo,
+  buscarConteudo,
   criarContadorDeRecomendacoes,
   normalizar,
 };

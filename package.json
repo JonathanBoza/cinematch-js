@@ -8,7 +8,7 @@
     "test": "node --test"
   },
   "keywords": ["javascript", "nodejs", "streaming", "recomendacao"],
-  "author": "",
+  "author": "Jonathan Euzébio Boza",
   "license": "MIT",
   "dependencies": {
     "prompt-sync": "^4.2.0"

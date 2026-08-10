@@ -71,7 +71,7 @@ Exemplos de commits: `feat: cria estrutura inicial`, `feat: adiciona perfil inte
 
 ## Autoria e links da entrega
 
-- Pessoa estudante/squad: **preencher**
+- Pessoa estudante/squad: **Jonathan Euzébio Boza**
 - Repositório público: **preencher**
 - Quadro Kanban: **preencher**
 - Vídeo público ou não listado: **preencher**

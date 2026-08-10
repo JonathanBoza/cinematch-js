@@ -22,11 +22,19 @@ Mostrar os arquivos no VS Code e explicar:
 Mostrar o terminal:
 
 ```bash
+chcp 65001
 npm install
 npm start
 ```
 
-> Para executar, é necessário ter o Node.js instalado. O `npm install` instala as dependências e o `npm start` inicia o sistema.
+> Para executar, é necessário ter o Node.js instalado. No Windows, o comando `chcp 65001` configura o terminal para usar UTF-8, ajudando a exibir e digitar corretamente caracteres como acentos e cedilha. O `npm install` instala as dependências e o `npm start` inicia o sistema.
+
+Se as dependências já estiverem instaladas, durante a gravação basta executar:
+
+```bash
+chcp 65001
+npm start
+```
 
 Usar estes dados na demonstração:
 

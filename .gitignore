@@ -1,0 +1,6 @@
+node_modules/
+.env
+.DS_Store
+Thumbs.db
+tmp/
+Mini-Projeto Avaliativo - M1S6 - Front-End React Native T1.pdf

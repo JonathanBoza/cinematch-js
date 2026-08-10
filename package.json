@@ -1,0 +1,16 @@
+{
+  "name": "cinematch-js",
+  "version": "1.0.0",
+  "description": "Onboarding interativo de recomendacao de streaming pelo terminal.",
+  "main": "cinematch.js",
+  "scripts": {
+    "start": "node cinematch.js",
+    "test": "node --test"
+  },
+  "keywords": ["javascript", "nodejs", "streaming", "recomendacao"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

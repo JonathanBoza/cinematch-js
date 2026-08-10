@@ -74,4 +74,4 @@ Exemplos de commits: `feat: cria estrutura inicial`, `feat: adiciona perfil inte
 - Pessoa estudante/squad: **Jonathan Euzébio Boza**
 - Repositório público: [github.com/JonathanBoza/cinematch-js](https://github.com/JonathanBoza/cinematch-js)
 - Quadro Kanban: [planejamento/tarefas-kanban.md](https://github.com/JonathanBoza/cinematch-js/blob/main/planejamento/tarefas-kanban.md)
-- Vídeo público ou não listado: **pendente de publicação**
+- Vídeo público ou não listado: [Assistir à apresentação no Google Drive](https://drive.google.com/file/d/1euzwzIIoZzPo3G-ABQLheix-kLSXRYgI/view?usp=sharing)
